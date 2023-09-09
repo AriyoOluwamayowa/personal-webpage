@@ -3,31 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>zuri task one</title>
-    <link rel="stylesheet" href="/style.css" />
+    <title>Personal webpage</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
   </head>
   <body>
-    <h1 data-testid="slackUserName">ARIYO OLUWAMAYOWA</h1>
+    <h3 data-testid="slackUserName">Ariyo Oluwamayowa</h3>
 
-    <div class="container">
-      <div>
-        <img
-          src="/mayowa.jpg"
-          alt="ariyo oluwamayowa"
-          data-testid="slackDisplayImage"
-        />
-      </div>
-      <div class="time-day">
-        <p data-testid="currentDayOfTheWeek"></p>
-        <p data-testid="currentUTCTime"></p>
-        <h3 data-testid="myTrack">Front-End Track</h3>
-      </div>
+    <div class="today">
+      <span data-testid="currentDayOfTheWeek"></span>
+      <span data-testid="currentUTCTime"></span>
     </div>
-    <a
-      href="https://github.com/AriyoOluwamayowa/personal-webpage"
-      data-testid="githubURL"
-      >Github Repository_</a
-    >
+
+    <div class="about">
+      <div class="about-me">
+        <p data-testid="myTrack">Frontend</p>
+        <p>
+          <a
+            href="https://github.com/AriyoOluwamayowa/personal-webpage"
+            target="_blank"
+            data-testid="githubURL"
+          >
+            Github Repository_</a
+          >
+        </p>
+      </div>
+      <img
+        src="/mayowa.jpg"
+        alt="Ariyo Oluwamayowa"
+        width="500px"
+        height="500px"
+        class="about-image"
+        data-testid="slackDisplayImage"
+      />
+    </div>
+    <script src="index.js"></script>
   </body>
-  <script src="script.js"></script>
 </html>
